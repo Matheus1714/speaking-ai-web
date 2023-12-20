@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+    <title>English Conversation AI</title>
+
+    <link rel="stylesheet" href="css/base.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <ion-icon name="mic-outline"></ion-icon>
+            <h1>English Conversation AI</h1>
+        </header>
+        <main>
+            <div id="timer">
+                <span>00:00</span>
+                <p class="userType">User Voice</p>
+            </div>
+    
+            <div id="wave">
+                <canvas id="waveformCanvas" width="500" height="100"></canvas>
+            </div>
+    
+            <div id="player">
+                <audio id="audioPlayer" controls></audio>
+            </div>
+            
+        </main>
+        <footer>
+            <div class="record">
+                <button id="toggleButton"><ion-icon name="mic-outline" id="icon"></ion-icon></button>
+            </div>
+            <div class="control">
+                <button id="delete"><ion-icon name="close-outline"></ion-icon>Delete</button>
+                <button id="send"><ion-icon name="send-outline"></ion-icon>Send AI</button>
+            </div>
+        </footer>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="scripts/wave.js"></script>
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/audio.js"></script>
+
+</body>
+</html>
