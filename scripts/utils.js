@@ -16,7 +16,10 @@ const uploadAudio = async (audioChunks) => {
 
         formData.append('audio', audioBlob, 'audio.wav')
 
-        const response = await fetch('http://127.0.0.1:5000/upload', {
+        // Local Route: http://127.0.0.1:5000/upload
+        // Remote Route: https://english-conversation-ai-api.vercel.app/upload
+
+        const response = await fetch('https://english-conversation-ai-api.vercel.app/upload', {
             method: 'POST',
             headers: {
                 'Access-Control-Allow-Origin':'*'
