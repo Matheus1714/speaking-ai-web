@@ -1,0 +1,19 @@
+main{
+    > button{
+        width: 100%;
+        border: none;
+        padding: 0.5rem;
+        border-radius: 4px;
+        background: var(--white);
+        color: var(--black);
+        font-size: 1rem;
+        font-weight: 700;
+
+        &:hover{
+            background: rgba(255, 255, 255, 0.8);
+        }
+        &:active{
+            background: rgba(255, 255, 255, 0.5);
+        }
+    }
+}

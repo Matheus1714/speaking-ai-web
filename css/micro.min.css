@@ -1,0 +1,1 @@
+.micro-container{display:flex;align-items:center;justify-content:center}.micro{background:var(--white);height:3rem;width:3rem;border:none;border-radius:9999px}.micro ion-icon{font-size:1.5rem}.micro:hover{background:rgba(255,255,255,.8)}.micro:active{background:rgba(255,255,255,.5)}

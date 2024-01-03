@@ -1,142 +1,142 @@
-.container{
-    background-color: var(--bg-color);
+// .container{
+//     background-color: var(--bg-color);
 
-    min-height: 100vh;
-    max-width: 40rem;
-    display: flex;
-    flex-direction: column;
-}
+//     min-height: 100vh;
+//     max-width: 40rem;
+//     display: flex;
+//     flex-direction: column;
+// }
 
-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
+// header{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     gap: 0.5rem;
 
-    margin: 1rem 0;
+//     margin: 1rem 0;
 
-    > h1{
-        font-size: 1rem;
-    }
+//     > h1{
+//         font-size: 1rem;
+//     }
 
-    ion-icon{
-        color: var(--white);
-        font-size: 1.5rem;
-    }
-}
+//     ion-icon{
+//         color: var(--white);
+//         font-size: 1.5rem;
+//     }
+// }
 
-main{
-    flex: 1;
-}
+// main{
+//     flex: 1;
+// }
 
-main #timer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
+// main #timer{
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+//     gap: 1rem;
 
-    margin: 4rem 0;
+//     margin: 4rem 0;
 
-    span{
-        font-size: 4rem;
-    }
-    p{
-        display: inline;
-        font-size: 1rem;
-        background-color: var(--black);
-        border-radius: 9999px;
-        padding: 0.25rem;
-        width: 8rem;
-    }
-}
+//     span{
+//         font-size: 4rem;
+//     }
+//     p{
+//         display: inline;
+//         font-size: 1rem;
+//         background-color: var(--black);
+//         border-radius: 9999px;
+//         padding: 0.25rem;
+//         width: 8rem;
+//     }
+// }
 
-main #wave{
-    background-color: rgba(#fff, 0.1);
-    height: 16rem;
+// main #wave{
+//     background-color: rgba(#fff, 0.1);
+//     height: 16rem;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
 
-    canvas{
-        max-width: 100%;
-    }
-}
-main #player{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 4rem 0;
-}
+//     canvas{
+//         max-width: 100%;
+//     }
+// }
+// main #player{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin: 4rem 0;
+// }
 
-footer{
-    margin-top: auto;
-    position: relative;
-}
+// footer{
+//     margin-top: auto;
+//     position: relative;
+// }
 
-footer .record{
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, -50%);
+// footer .record{
+//     position: absolute;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
 
-    border-radius: 50%;
-    background-color: var(--white);
+//     border-radius: 50%;
+//     background-color: var(--white);
 
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+//     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 
-    button{
-        all: unset;
+//     button{
+//         all: unset;
 
-        height: 4em;
-        width: 4rem;
-        border-radius: 50%;
+//         height: 4em;
+//         width: 4rem;
+//         border-radius: 50%;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
 
-        ion-icon{
-            font-size: 1.5rem;
-            color: var(--bg-color);
-        }
-    }
-    :hover{
-        background-color: rgba(#000, 0.4);
-    }
-    :active{
-        background-color: rgba(#000, 0.6);
-    }
-}
+//         ion-icon{
+//             font-size: 1.5rem;
+//             color: var(--bg-color);
+//         }
+//     }
+//     :hover{
+//         background-color: rgba(#000, 0.4);
+//     }
+//     :active{
+//         background-color: rgba(#000, 0.6);
+//     }
+// }
 
-footer .control{
-    display: flex;
-    justify-content: space-around;
+// footer .control{
+//     display: flex;
+//     justify-content: space-around;
 
-    background-color: rgba(#fff, 0.1);
+//     background-color: rgba(#fff, 0.1);
 
-    button{
-        all: unset;
-        width: 100%;
-        padding: 1rem;
+//     button{
+//         all: unset;
+//         width: 100%;
+//         padding: 1rem;
 
-        text-align: center;
-        color: var(--font-color);
+//         text-align: center;
+//         color: var(--font-color);
 
-        font-size: 1rem;
-        font-weight: 400;
+//         font-size: 1rem;
+//         font-weight: 400;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 0.5rem;
-    }
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         gap: 0.5rem;
+//     }
 
-    :hover{
-        background-color: rgba(#fff, 0.4);
-    }
-    :active{
-        background-color: rgba(#fff, 0.6);
-    }
-}
+//     :hover{
+//         background-color: rgba(#fff, 0.4);
+//     }
+//     :active{
+//         background-color: rgba(#fff, 0.6);
+//     }
+// }

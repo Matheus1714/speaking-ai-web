@@ -1,0 +1,1 @@
+main>button{width:100%;border:none;padding:.5rem;border-radius:4px;background:var(--white);color:var(--black);font-size:1rem;font-weight:700}main>button:hover{background:rgba(255,255,255,.8)}main>button:active{background:rgba(255,255,255,.5)}

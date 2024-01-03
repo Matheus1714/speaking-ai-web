@@ -1,0 +1,24 @@
+:root{
+    --black: #000;
+    --blue: #14213d;
+    --white: #ffffff;
+
+    --bg-color: var(--blue);
+    --font-color-light: var(--white);
+    --font-color-dark: var(--black);
+
+    --selection-color: var(--white);
+    --selection-hover-color: #14213d41;
+
+    --w-container: 90rem;
+    --w-box-section: calc(var(--w-container) / 2 - 10rem);
+
+    --bg-record-progress-color: rgba(20, 33, 61, 0.5);
+    --bg-record-progress-bar-color: var(--blue);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}

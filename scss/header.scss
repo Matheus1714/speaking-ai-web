@@ -1,0 +1,19 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 1rem;
+
+    border-bottom: 1px solid var(--white);
+
+    ion-icon{
+        font-size: 1.5rem;
+        color: var(--white);
+    }
+    h1{
+        font-size: 1.5rem;
+        color: var(--white);
+        font-weight: 700;
+    }
+}

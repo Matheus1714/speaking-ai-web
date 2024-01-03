@@ -1,0 +1,62 @@
+.dropdown{
+    width: 100%;
+    position: relative;
+}
+
+.dropdown .btn-select{
+    display: flex;
+    height: 2rem;
+    background: var(--selection-color);
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 4px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown .btn-select ion-icon{
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.dropdown.active .btn-select ion-icon{
+    transform: rotate(-180deg);
+}
+
+.dropdown .options{
+    position: absolute;
+    margin-top: 0.5rem;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1;
+}
+
+.dropdown.active .options{
+    width: 100%;
+    display: block;
+}
+
+.dropdown .options .option{
+    display: flex;
+    height: 2rem;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 4px;
+    padding: 0 1rem;
+    background: var(--selection-color);
+    transition: 0.1s;
+}
+
+.dropdown .options .option:hover{
+    background: var(--selection-hover-color);
+}
+
+.dropdown .options .option .option-text{
+    font-size: 1rem;
+    color: var(--font-color-dark);
+}

@@ -1,0 +1,63 @@
+.record{
+    background: var(--white);
+    
+    width: 100%;
+    height: 4rem;
+    border-radius: 4px;
+
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1rem;
+
+    padding: 0.5rem;
+}
+
+.record .control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 3rem;
+    width: calc(3rem + 2rem / 2);
+
+    background: var(--white);
+    border: 2px solid var(--black);
+    border-radius: 9999px;
+
+    ion-icon{
+        font-size: 2rem;
+    }
+    &:hover{
+        background: rgba(0, 0, 0, 0.3);
+    }
+    &:active{
+        background: rgba(0, 0, 0, 0.5);
+    }
+}
+
+.record .record-progress{
+    width: 100%;
+
+    transform: translate(0, 30%);
+    
+    .progress-bar{
+        background: var(--bg-record-progress-color);
+    }
+    .progress{
+        background: var(--bg-record-progress-bar-color);
+    }
+
+    .timer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        span{
+            font-size: 0.875rem;
+        }
+        margin: 0.20rem 0;
+    }
+}
