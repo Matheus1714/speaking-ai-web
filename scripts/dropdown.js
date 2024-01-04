@@ -16,7 +16,6 @@ allDropdown.forEach(dropdown => {
     const buttonSelect = dropdown.querySelector('.btn-select')
     const options = dropdown.querySelectorAll('.option')
 
-
     buttonSelect.addEventListener('click', () => dropdown.classList.toggle('active'))
     options.forEach(option => {
         option.addEventListener('click', () => {
