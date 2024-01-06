@@ -1,4 +1,4 @@
-import {Record} from './record.js'
+import { Record } from './record.js'
 
 document.addEventListener('DOMContentLoaded', () => {
     const recorder = new Record()
@@ -10,22 +10,3 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 })
 
-// document.addEventListener('DOMContentLoaded', () => {
-
-    
-
-//     // sendElement.addEventListener('click', async() => {
-//     //     try{
-//     //         if(audioChunks != []){
-//     //             const response = await uploadAudio(audioChunks)
-//     //             const audioBlob = await response.blob()
-//     //             const audioUrl = URL.createObjectURL(audioBlob)
-
-//     //             audioPlayer.src = audioUrl
-//     //             audioPlayer.play()
-//     //         }
-//     //     }catch(error){
-//     //         console.error('Ocorreu um problema')
-//     //     }
-//     // })
-// })

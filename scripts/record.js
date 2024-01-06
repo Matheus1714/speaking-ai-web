@@ -7,6 +7,7 @@ export class Record {
     constructor() {
         this.audioPlayer = document.getElementById('audioPlayer')
         this.recordAudioControl = document.getElementById('recordAudioControl')
+        this.wave = document.getElementById('wave')
         this.media = document.getElementById('media')
         
         this.mediaRecorder = null
@@ -25,13 +26,13 @@ export class Record {
                     if (e.data.size > 0) {
                         this.audioChunks.push(e.data)
                     }
-                };
+                }
 
                 this.mediaRecorder.onstop = () => {
                     const audioBlob = new Blob(this.audioChunks, { type: 'audio/wav' })
                     this.audioChunks = []
                     this.audioPlayer.src = URL.createObjectURL(audioBlob)
-                };
+                }
 
                 this.mediaRecorder.start()
             })
@@ -54,9 +55,11 @@ export class Record {
 
         if (!this.isRecording) {
             recordAudioControlIcon.setAttribute('name', MicroIcons.STOP)
+            this.wave.classList.add('startWave')
             await this.startRecording()
         } else {
             recordAudioControlIcon.setAttribute('name', MicroIcons.PLAY)
+            this.wave.classList.remove('startWave')
             await this.stopRecording()
             this.audioPlayer.play()
         }
