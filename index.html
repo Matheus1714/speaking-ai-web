@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/micro.min.css">
     <link rel="stylesheet" href="css/record.min.css">
     <link rel="stylesheet" href="css/progress-bar.min.css">
+    <link rel="stylesheet" href="css/particles.min.css">
 
     <!-- CSS Skelethon -->
     <link rel="stylesheet" href="css/header.min.css">
@@ -85,10 +86,7 @@
                     </div>
                 </div>
     
-                <div class="wave">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                    <div class="line"></div>
+                <div class="wave" id="wave">
                     <div class="line"></div>
                     <div class="line"></div>
                     <div class="line"></div>
@@ -117,14 +115,14 @@
                                 <div class="progress"></div>
                             </div>
                             <div class="timer">
-                                <span>00:40</span>
-                                <span>01:30</span>
+                                <span id="time-progress">00:00</span>
+                                <span id="time-end">00:00</span>
                             </div>
                         </div>
                     </div>
                 </div>
     
-                <button>Send to AI <ion-icon name="color-wand-outline"></ion-icon></button>
+                <button id="send">Send to AI <ion-icon name="color-wand-outline"></ion-icon></button>
             </main>
         </div>
         <footer>
@@ -134,15 +132,31 @@
         </footer>
     </div>
 
+    <div id="particle-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
     <audio id="audioPlayer" controls style="display: none;"></audio>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <!-- <script src="scripts/wave.js"></script>
-    <script src="scripts/utils.js"></script> -->
     <script src="scripts/dropdown.js"></script>
     
     <script type="module" src="scripts/audio.js"></script>
+    <script type="module" src="scripts/media.js"></script>
+    <script type="module" src="scripts/upload.js"></script>
+    <script type="module" src="scripts/output.js"></script>
 </body>
 </html>
