@@ -1,5 +1,20 @@
-export const uploadAudio = async () => {
+const Languages = {
+    'Select a Language': 'English',
+    English,
+    Portuguese,
+    Spanish,
+    French,
+    Chinese
+}
+
+const Models = {
+    'Select an AI Model': 'gpt3-turbo'
+}
+
+export const uploadAudio = async (props) => {
     try{
+        const {language, model} = props
+
         const audioPlayer = document.querySelector('#audioPlayer')
         
         const audioURL = audioPlayer.src
@@ -8,6 +23,8 @@ export const uploadAudio = async () => {
         const formData = new FormData()
 
         formData.append('audio', audioBlob, 'audio.wav')
+        formData.append('language', Languages[language])
+        formData.append('model', Models[model])
 
         const response = await fetch('http://192.168.15.147:5000/upload', {
             method: 'POST',
