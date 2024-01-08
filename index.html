@@ -54,6 +54,7 @@
                             <li class="option"><span class="option-text">Portuguese</span></li>
                             <li class="option"><span class="option-text">Spanish</span></li>
                             <li class="option"><span class="option-text">French</span></li>
+                            <li class="option"><span class="option-text">German</span></li>
                             <li class="option"><span class="option-text">Chinese</span></li>
                         </ul>
                     </div>
@@ -61,20 +62,38 @@
     
                 <div class="section">
                     <h2>AI Model</h2>
-                    <div class="dropdown" id="ai-model">
+                    <div class="dropdown" id="ai-model-select">
                         <div class="btn-select">
                             <span class="sbtn-text">Select an AI Model</span>
                             <ion-icon name="chevron-down-outline"></ion-icon>
                         </div>
                         <ul class="options">
-                            <li class="option"><span class="option-text">gpt3-tutbo</span></li>
+                            <li class="option"><span class="option-text">gpt-3.5-turbo</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h2>Voice</h2>
+                    <div class="dropdown" id="voice-select">
+                        <div class="btn-select">
+                            <span class="sbtn-text">Select a Voice</span>
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </div>
+                        <ul class="options">
+                            <li class="option"><span class="option-text">alloy</span></li>
+                            <li class="option"><span class="option-text">echo</span></li>
+                            <li class="option"><span class="option-text">fable</span></li>
+                            <li class="option"><span class="option-text">onyx</span></li>
+                            <li class="option"><span class="option-text">nova</span></li>
+                            <li class="option"><span class="option-text">shimmer</span></li>
                         </ul>
                     </div>
                 </div>
     
                 <div class="section">
-                    <h2>Criativity</h2>
-                    <input type="range" value="0" class="slider"/>
+                    <h2>Temperature</h2>
+                    <input id="temperature" type="range" value="0" class="slider"/>
                 </div>
             </aside>
             <main class="box-section">
