@@ -30,13 +30,13 @@ The main technologies for the front-end are:
 
 # Features 🚀
 
-[X] Record Audio
-[X] Clear Audio
-[X] Send Audio
-[X] Play audio from AI
-[ ] Create context
-[X] Add background animations
-[X] Improve the audio play design (webkit)
+- [X] Record Audio
+- [X] Clear Audio
+- [X] Send Audio
+- [X] Play audio from AI
+- [ ] Create context
+- [X] Add background animations
+- [X] Improve the audio play design (webkit)
 
 ## Run Project 🏃
 
