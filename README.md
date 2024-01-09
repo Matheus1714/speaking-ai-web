@@ -1,8 +1,8 @@
-# English Conversartion AI (Web)
+# Speaking AI (Web)
 
 ![Banner](.github/animation.gif)
 
-Do you have problem to learn english? Then this application will help you with it! This is an app that use the `OpenAI` tools to have an simulated english conversation. Try it!
+Do you have problem to learn languages? Then this application will help you with it! This is an app that use the `OpenAI` tools to have an simulated languages conversation. Try it!
 
 ## Table of Content 📜
 
