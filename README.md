@@ -19,7 +19,7 @@ This project has as goals help people with problems to train talking in english.
 
 ## Application DEMO 🚀
 
-The application demo can be found at the [Application DEMO](https://matheus1714.github.io/english-conversation-ai-web/)
+The application demo can be found at the [Application DEMO](https://matheus1714.github.io/speaking-ai-web/)
 
 ## Technologies ⚙️
 
