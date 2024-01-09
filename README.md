@@ -1,6 +1,6 @@
 # English Conversartion AI (Web)
 
-![Banner](.github/banner.png)
+![Banner](.github/animation.gif)
 
 Do you have problem to learn english? Then this application will help you with it! This is an app that use the `OpenAI` tools to have an simulated english conversation. Try it!
 
@@ -35,15 +35,14 @@ The main technologies for the front-end are:
  [X] Send Audio
  [X] Play audio from AI
  [ ] Create context
- [ ] Add background animations
- [ ] Improve the audio play design (webkit)
+ [X] Add background animations
+ [X] Improve the audio play design (webkit)
 
 ## Run Project 🏃
 
 Before running the project, visit the repositorie:
 
-* [english-conversation-ai-api
-](https://github.com/Matheus1714/english-conversation-ai-api)
+* [speaking-ai-api](https://github.com/Matheus1714/speaking-ai-api)
 
 Open the file `index.html`.
 
